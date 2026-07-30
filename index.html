@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="Mariano — Montador de Móveis. Especialista em montagem e desmontagem de móveis com qualidade, precisão e agilidade. Orçamento rápido no WhatsApp." name="description">
+  <meta name="keywords" content="Montador de móveis, Montador Hortolândia, Montador Campinas, Montador Sumaré, desmontador de móveis, mudanças montagens, mudanças demontagens">
+  <link href="https://media.base44.com/images/public/6a6a8b9bc1f92d35b253514c/9762f66bd_logo.png" rel="icon" type="image/svg+xml">
+  <title>Mariano — Montador de Móveis | Precisão que transforma espaços </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Inter:wght@300;400;600&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d0d0d;
+      color: #f3f4f6;
+    }
+
+    h1, h2, h3, .font-heading {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .bg-wood-dark {
+      background-color: #1a120c;
+    }
+
+    .bg-amber-accent {
+      background-color: #f59e0b;
+    }
+
+    .text-amber-accent {
+      color: #f59e0b;
+    }
+
+    .border-amber-accent {
+      border-color: #f59e0b;
+    }
+
+    .hero-bg {
+      background: linear-gradient(180deg, rgba(13, 13, 13, 0.75) 0%, rgba(13, 13, 13, 1) 100%),
+                  radial-gradient(circle at 50% 30%, #3e2723 0%, #0d0d0d 80%);
+    }
+
+    /* Floating WhatsApp Button Animation */
+    .pulse-btn {
+      animation: pulse-ring 2s infinite;
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.6);
+      }
+      70% {
+        box-shadow: 0 0 0 15px rgba(245, 158, 11, 0);
+      }
+      100% {
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-amber-500 selection:text-black">
+
+  <!-- Header -->
+  <header class="border-b border-neutral-800 bg-neutral-950/80 backdrop-blur-md fixed w-full z-50 top-0 left-0">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <i class="fa-solid fa-screwdriver-wrench text-amber-accent text-2xl"></i>
+        <span class="font-heading text-xl font-black tracking-wider uppercase text-white">MARIANO</span>
+      </div>
+      <div class="text-xs sm:text-sm text-neutral-400 font-mono tracking-widest">
+        CAMPINAS & REGIÃO • (19) 97163-7102
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-bg pt-32 pb-20 px-4 min-h-[85vh] flex items-center">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      <p class="text-amber-accent tracking-widest uppercase font-mono text-xs sm:text-sm font-semibold">// MARIANO — MONTADOR DE MÓVEIS</p>
+      
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight leading-none text-white">
+        PRECISÃO QUE <br />
+        <span class="text-amber-accent">TRANSFORMA</span> <br />
+        ESPAÇOS.
+      </h1>
+
+      <p class="text-neutral-300 text-base sm:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+        Especialista em montagem e desmontagem de móveis com qualidade e agilidade — guarda-roupas, painéis de TV, armários de cozinha, camas e muito mais.
+      </p>
+
+      <div class="pt-6 flex justify-center">
+        <a href="#orcamento" class="bg-amber-accent hover:bg-amber-500 text-black font-extrabold px-8 py-4 rounded-xl shadow-lg transition duration-300 transform hover:-translate-y-1 flex items-center gap-3 uppercase text-sm tracking-wider">
+          <i class="fa-solid fa-calculator"></i>
+          Solicitar Orçamento Agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form / Configurator Section -->
+  <section id="orcamento" class="py-20 px-4 bg-neutral-950 border-t border-neutral-800">
+    <div class="max-w-2xl mx-auto bg-neutral-900 border border-neutral-800 p-6 sm:p-10 rounded-2xl shadow-2xl">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl sm:text-3xl font-black uppercase text-white">Simular Orçamento</h2>
+        <p class="text-neutral-400 text-sm mt-2">Preencha os dados abaixo para enviar direto para o WhatsApp do Mariano</p>
+      </div>
+
+      <form id="quoteForm" class="space-y-6">
+        <!-- Step 1: Contact -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono uppercase text-neutral-400 mb-2">Seu Nome *</label>
+            <input type="text" id="nome" required placeholder="Ex: João Silva" class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500" />
+          </div>
+          <div>
+            <label class="block text-xs font-mono uppercase text-neutral-400 mb-2">Bairro / Cidade *</label>
+            <input type="text" id="local" required placeholder="Ex: Centro - Campinas" class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500" />
+          </div>
+        </div>
+
+        <!-- Step 2: Service Type -->
+        <div>
+          <label class="block text-xs font-mono uppercase text-neutral-400 mb-2">Tipo de Serviço *</label>
+          <select id="servico" class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500">
+            <option value="Montagem de Móveis Novos">Montagem de Móveis Novos</option>
+            <option value="Desmontagem de Móveis">Desmontagem de Móveis</option>
+            <option value="Desmontagem + Remontagem (Mudança)">Desmontagem + Remontagem (Mudança)</option>
+            <option value="Ajustes / Reparos">Ajustes e Reparos gerais</option>
+          </select>
+        </div>
+
+        <!-- Step 3: Items -->
+        <div>
+          <label class="block text-xs font-mono uppercase text-neutral-400 mb-2">Quais móveis? (Selecione ou descreva)</label>
+          <div class="grid grid-cols-2 gap-2 text-sm text-neutral-300 mb-3">
+            <label class="flex items-center gap-2 bg-neutral-950 p-3 rounded-lg border border-neutral-800 cursor-pointer hover:border-neutral-700">
+              <input type="checkbox" value="Guarda-Roupa" class="item-check accent-amber-500" /> Guarda-Roupa
+            </label>
+            <label class="flex items-center gap-2 bg-neutral-950 p-3 rounded-lg border border-neutral-800 cursor-pointer hover:border-neutral-700">
+              <input type="checkbox" value="Painel de TV / Rack" class="item-check accent-amber-500" /> Painel de TV / Rack
+            </label>
+            <label class="flex items-center gap-2 bg-neutral-950 p-3 rounded-lg border border-neutral-800 cursor-pointer hover:border-neutral-700">
+              <input type="checkbox" value="Armário de Cozinha" class="item-check accent-amber-500" /> Cozinha Completa
+            </label>
+            <label class="flex items-center gap-2 bg-neutral-950 p-3 rounded-lg border border-neutral-800 cursor-pointer hover:border-neutral-700">
+              <input type="checkbox" value="Cama / Mesa / Outros" class="item-check accent-amber-500" /> Cama / Mesa / Outros
+            </label>
+          </div>
+          <textarea id="observacoes" rows="3" placeholder="Detalhes adicionais (ex: Guarda-roupa de 6 portas com espelho, móvel novo na caixa...)" class="w-full bg-neutral-950 border border-neutral-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white font-black py-4 rounded-xl flex items-center justify-center gap-3 uppercase text-sm tracking-wider transition duration-300">
+          <i class="fa-brands fa-whatsapp text-xl"></i>
+          Enviar para o WhatsApp do Mariano
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="py-16 px-4 bg-neutral-900/50">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl space-y-3">
+        <i class="fa-solid fa-bolt text-amber-accent text-3xl"></i>
+        <h3 class="font-bold text-white uppercase text-sm">Atendimento Rápido</h3>
+        <p class="text-xs text-neutral-400">Agendamento simples e resposta ágil no WhatsApp.</p>
+      </div>
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl space-y-3">
+        <i class="fa-solid fa-toolbox text-amber-accent text-3xl"></i>
+        <h3 class="font-bold text-white uppercase text-sm">Ferramentas Profissionais</h3>
+        <p class="text-xs text-neutral-400">Equipamento adequado para garantir acabamento perfeito.</p>
+      </div>
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl space-y-3">
+        <i class="fa-solid fa-broom text-amber-accent text-3xl"></i>
+        <h3 class="font-bold text-white uppercase text-sm">Cuidado no Local</h3>
+        <p class="text-xs text-neutral-400">Respeito à sua casa, organização e limpeza após o serviço.</p>
+      </div>
+      <div class="p-6 bg-neutral-950 border border-neutral-800 rounded-xl space-y-3">
+        <i class="fa-solid fa-hand-holding-dollar text-amber-accent text-3xl"></i>
+        <h3 class="font-bold text-white uppercase text-sm">Preço Justo</h3>
+        <p class="text-xs text-neutral-400">Orçamento transparente sem taxas escondidas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-neutral-800 text-center text-neutral-500 text-xs">
+    <p>© Mariano - Montador de Móveis. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Floating Sticky WhatsApp Button -->
+  <a href="https://wa.me/5519971637102?text=Ol%C3%A1%20Mariano!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20montagem%20de%20m%C3%B3veis." target="_blank" class="fixed bottom-6 right-6 bg-amber-accent hover:bg-amber-500 text-black font-extrabold px-5 py-3 rounded-full shadow-2xl flex items-center gap-3 z-50 pulse-btn uppercase text-xs tracking-wider">
+    <i class="fa-brands fa-whatsapp text-2xl text-black"></i>
+    <span>FALAR COM MARIANO AGORA</span>
+  </a>
+
+  <!-- Script for WhatsApp Redirection -->
+  <script>
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const nome = document.getElementById('nome').value;
+      const local = document.getElementById('local').value;
+      const servico = document.getElementById('servico').value;
+      const obs = document.getElementById('observacoes').value;
+      
+      const selectedItems = [];
+      document.querySelectorAll('.item-check:checked').forEach(item => {
+        selectedItems.push(item.value);
+      });
+      
+      const itemsText = selectedItems.length > 0 ? selectedItems.join(', ') : 'Não informado';
+      
+      let message = `Olá Mariano! Gostaria de um orçamento:\n\n`;
+      message += `*Nome:* ${nome}\n`;
+      message += `*Local:* ${local}\n`;
+      message += `*Serviço:* ${servico}\n`;
+      message += `*Móveis:* ${itemsText}\n`;
+      if (obs) {
+        message += `*Obs:* ${obs}\n`;
+      }
+
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/5519971637102?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+    });
+  </script>
+</body>
+</html>
